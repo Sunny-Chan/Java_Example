@@ -1,0 +1,98 @@
+Part A:
+=======
+We met up and planned on how we are going to divided the work for this project.
+We have decided to start with Sunny's project 5 part02 code as a base. From
+there, we each picked one of the new classes to implement. Once GraphView and
+the ColorPoint class is completed, we will work together to get the
+TestGraphView running.
+
+Part B:
+=======
+When we were not pair programming, we kept moving forward in development by
+using asynchronous programming. We've employed the used of modern tools such as
+email, google hangout, github's comment function to keep each other informed.
+We've also employed conventional programming methodology to keep track of the
+development and avoid conflict between commits of features. We've learnt
+serveral common ways of collaboration in coding, such as the "Centralized
+Workflow", "Feature Branch Workflow", "Gitflow Workflow", and "Forking
+Workflow". 
+
+We've decided on the "Feature Branch Workflow" for this project as it suits a
+small two person team and it is relatively less complicated to imeplement. When
+we have decided to work on a new feature, we let each other know what we would
+do. After that, we create a new branch with the name of the feature and work on
+the specific feature. After we are done with the coding, we commit and push the
+files to central repository so other can review the modification. we then
+submit a pull request notifying the other that the feature is completed, and
+request for review of the code before pushing to master branch. When
+asynchronous programming, we made sure that merging of code will create less
+conflict by pulling the most update changed to the local branch before working
+and pushing. We also used recommanded conflict solving tectniques to resolve
+the problems by using terminal tools such as gitdiff, vimdiff, git status etc.
+
+Part C: 
+======= 
+The kind of discussion that we felt was benefitual when we were doing
+synchronous pair programming side-by-side was making sure that we are on the
+same page as to what features to implement, what it does, and how it is going
+to affect the rest of the program. As we are working simultaneously, we may not
+be aware of what the program does as a whole, but by sharing info and
+understanding of the program, we also gain insight into how best to implement
+the features and make the program work.
+
+Features list:
+--------------
+# Justin:
+ColorPointed.java
+    --The ColoredPoint constructor
+    ---getColor()
+    ---getLabel() 
+    
+Country.java
+    --getnewSub()
+    --getYear()
+    
+GraphView.java
+    --initializing the ColoredPoint object
+
+Task_Description
+    -Create and answered some questions
+    -create features list
+
+Others:
+    -commenting
+
+# Sunny:
+Country.java
+    -debugging equals()
+    -fixed hash fucntion()
+    -added essential variables
+    -modified constructor accordingly
+    -modified addSubscriptionYear() accordingly
+
+LinkedList.java
+    -debug contain()
+
+GraphView.java
+    --The GraphView contructor
+    ---paintComponent
+    ----map
+    
+TestGraphView.java
+    -initializeGui() setup JFrame, JPanel, Testing
+    -identify and debug errors
+
+ColorPointed.java
+    -debug and fixed constructor
+    -added utilization of parent point class
+    -modified getLabel()
+
+Task_Description
+    -added additional info into paragraphs and features
+
+Others:
+    -syntax 
+    -format
+    -clean up 
+    -doing what perfectionist do best
+

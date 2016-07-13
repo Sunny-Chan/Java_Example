@@ -1,0 +1,123 @@
+Authors: Wai Hei (Sunny) Chan
+         Justin Thomas
+Class: CS1B
+Project: #6
+Date: 03/16/2015
+Description:
+This program gets cellular subscription data from a data file and show it on a
+graph by using Graphic library and GUI libray such as Abstract Window Toolkit
+(AWT) and Swing.
+
+
+=====
+Files
+=====
+-----------------
+ColoredPoint.java
+-----------------
+Description:
+ColoredPoint holds the color assigned to each point
+
+Methods:
+    - ColoredPoint (Color color, double mappedX, double mappedY, double originalX, double originalY)
+    - getColor()
+    - getLabel()
+ -----------------
+GraphView.java
+-----------------
+Description:
+This is a class GraphView  which extends JPanel
+
+Methods:
+    - GraphView(int newWidth, int newHeight, LinkedList<Country> countries)
+    - paintComponent(Graphics g2d)
+    - map(double value, double dataMin, double dataMax, double plottedMin, double plottedMax)
+ -----------------
+CountryNode.java
+-----------------
+Description:
+Country node used to store a country info
+
+Methods:
+    - CountryNode(Country newCountry)
+    - CountryNode(Country newCountry, CountryNode newNode)
+    - setNext(CountryNode newNode)
+    - getNext()
+    - getCountry()
+-----------------
+CountryNode.java
+-----------------
+Description:
+Country node used to store a country info
+
+Methods:
+    - CountryNode(Country newCountry)
+    - CountryNode(Country newCountry, CountryNode newNode)
+    - setNext(CountryNode newNode)
+    - getNext()
+    - getCountry()
+
+---------------------
+CountryList.java
+---------------------
+Description:
+Linked list class used to link countryNode
+
+Methods:
+    - constructor()
+    - add(Country newCountry)
+    - isEmpty()
+    - contains(Country checkCountry)
+    - toString()
+
+---------------------
+Country.java
+---------------------
+Description:
+Class that store the cellular subscription data and country name
+
+Methods:
+    - constructor(String)
+    - constructor(String, int)
+    - addSubscriptionYear(int, double)
+    - getNumSubscriptionsForPeriod(int, int)
+    - getName()
+    - validateYear(int, int)
+    - toString()
+    - equals(obj)
+---------------------
+CSVReader.java
+---------------------
+Description:
+This is a class called CellularData which process and display cellular data 
+from different countries for analytical use. 
+
+Methods:
+    - constructor(string)
+    - initialize(String fileName)
+    - setNumberOfCountries(String num_country)
+    - setYearLabels(String [] years)
+    - getCountryNames()
+    - getYearLabels()
+    - getParsedTable()
+    - getNumberOfYears()
+ 
+---------------------
+SubscriptionYear.java
+---------------------
+Description:
+Class SubscriptionYear used to setup year and subscription 
+
+Method:
+    - SubscriptionYear(int newYear, double newSub)
+    - setYear(int newYear)
+    - setSubscription(double newSub)
+    - getyear()
+    - getSubscription()
+    - toString()
+
+---------------------
+TestCountryList.java
+---------------------
+Description:
+A testing file provided by instructor
